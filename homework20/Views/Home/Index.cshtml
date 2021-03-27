@@ -1,0 +1,19 @@
+﻿@model List<homework20.DataContext.Person>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@foreach (var person in Model)
+{
+    <h6>Id:@person.Id</h6>
+    <h6>LastName:@person.LastName</h6>
+    <h6>FirstName:@person.FirstName</h6>
+    <h6>MiddleName:@person.MiddleName</h6>
+
+}
